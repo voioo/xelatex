@@ -1,0 +1,15 @@
+name: 'xelatex Github Action'
+description: 'Runs xelatex' 
+author: "Quentin JOLY"
+branding:
+  icon: 'file-text'
+  color: 'blue'
+inputs:
+  file:
+    description: 'File to be compile'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.file }}
