@@ -1,4 +1,4 @@
-name: 'xelatex Github Action'
+name: 'xelatex Action'
 description: 'Runs xelatex' 
 author: "Quentin JOLY"
 branding:
