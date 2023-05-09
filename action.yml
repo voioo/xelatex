@@ -6,7 +6,7 @@ branding:
   color: 'blue'
 inputs:
   file:
-    description: 'File to be compile'
+    description: 'File to be compiled'
     required: true
 runs:
   using: 'docker'
