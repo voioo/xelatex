@@ -1,6 +1,6 @@
 # LaTeX to PDF GitHub Action
 
-This GitHub Action compiles a LaTeX file to PDF using an Alpine Linux Docker image with XeLaTeX installed.
+This GitHub Action compiles a LaTeX file to PDF using a Debian Linux Docker image with XeLaTeX installed.
 
 ## Usage
 
