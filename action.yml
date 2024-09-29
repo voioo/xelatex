@@ -1,6 +1,6 @@
 name: 'xelatex Action'
 description: 'Runs xelatex' 
-author: "Quentin JOLY"
+author: "Voioo"
 branding:
   icon: 'file-text'
   color: 'blue'

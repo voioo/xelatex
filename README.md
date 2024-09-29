@@ -18,8 +18,8 @@ jobs:
   build-pdf:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: docker://ghcr.io/qjoly/xelatex:latest
+    - uses: actions/checkout@v4
+    - uses: docker://ghcr.io/voioo/xelatex:latest
       with:
         args: |
           document.tex
@@ -33,7 +33,7 @@ jobs:
 This workflow specifies that it should be triggered on push events where at least one `.tex` file is modified. It also specifies a single job that runs on the latest version of Ubuntu. The job has three steps:
 
 1. Check out the repository using the `actions/checkout` action.
-2. Run the Docker image `ghcr.io/qjoly/xelatex:latest` to compile the `document.tex` file. You can replace `document.tex` with the name of your own LaTeX file.
+2. Run the Docker image `ghcr.io/voioo/xelatex:latest` to compile the `document.tex` file. You can replace `document.tex` with the name of your own LaTeX file.
 3. Upload the resulting `document.pdf` file as an artifact.
 
 ## Inputs
@@ -62,8 +62,8 @@ jobs:
   build-pdf:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: docker://ghcr.io/qjoly/xelatex:latest
+    - uses: actions/checkout@v4
+    - uses: docker://ghcr.io/voioo/xelatex:latest
       with:
         args: |
           document.tex
@@ -74,7 +74,7 @@ jobs:
           document.pdf
 ```
 
-This workflow will trigger whenever a `.tex` file is pushed to the repository. It will compile the `document.tex` file to PDF using the `ghcr.io/qjoly/xelatex:latest` Docker image, and then upload the resulting `document.pdf` file as an artifact.
+This workflow will trigger whenever a `.tex` file is pushed to the repository. It will compile the `document.tex` file to PDF using the `ghcr.io/voioo/xelatex:latest` Docker image, and then upload the resulting `document.pdf` file as an artifact.
 
 ## License
 

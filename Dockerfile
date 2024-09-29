@@ -1,4 +1,4 @@
-FROM debian:bullseye-slim
+FROM debian:trixie-slim
 RUN apt-get update \
     && apt-get install -y texlive-full texlive-fonts-extra
 COPY entrypoint.sh /entrypoint.sh
